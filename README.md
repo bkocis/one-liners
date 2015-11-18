@@ -13,7 +13,8 @@ The following solutions are for specific cases that I encountered, so it is most
 	- `find . -iname '*.DPT' -exec vi '{}' -c ':g/^/m0' -c ':wq' \;`
 
 
-
+- a compillation of sed one-liners 
+	- http://sed.sourceforge.net/sed1line.txt
 
 # Disclaimer 
 
