@@ -8,6 +8,11 @@ Here are a bit more extended verison of the one-liners from the mentioned reposi
 
 The following solutions are for specific cases that I encountered, so it is most probable that you have found similar solutions.  
 
+Reverse the content of a text file using vi commands 
+
+- `find . -iname '*.DPT' -exec vi '{}' -c ':g/^/m0' -c ':wq' \;`
+
+
 
 
 # Disclaimer 
