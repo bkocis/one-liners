@@ -21,6 +21,14 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 - a compillation of sed one-liners 
 	- http://sed.sourceforge.net/sed1line.txt
 
+- search files inbetween specific date
+	- using `find`
+		- `find . -newermt '2015-03-03' ! -newermt '2015-03-04'` 
+		- `find . -newermt 'Nov 11 03:56' ! -newermt 'Nov 11 03:59 -print '%Tc %p\n`
+	- using `ls` and `awk`
+		- `ls -ltr | grep 'Nov.*5.*10 | awk '{print $NF}'`
+		and copy them to another folder:
+		- `ls -ltr | grep 'Nov.*5.*10 | awk '{print $NF}' | xargs -i cp '{}' folder`
 
 
 # Disclaimer 
