@@ -25,11 +25,16 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 	- using `find`
 		- `find . -newermt '2015-03-03' ! -newermt '2015-03-04'` 
 		- `find . -newermt 'Nov 11 03:56' ! -newermt 'Nov 11 03:59' -printf '%Tc %p\n'`
+
 			where `-printf '%Tc %p\n'` will print out the exact date 
+
 			adding `| sort -n` to the end will to the evident sorting
+
 	- using `ls` and `awk`
 		- `ls -ltr | grep 'Nov.*5.*10 | awk '{print $NF}'`
+
 		and copy them to another folder:
+
 		- `ls -ltr | grep 'Nov.*5.*10 | awk '{print $NF}' | xargs -i cp '{}' folder`
 
 
