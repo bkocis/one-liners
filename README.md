@@ -28,7 +28,7 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 
 			where `-printf '%Tc %p\n'` will print out the exact date 
 
-			adding `| sort -n` to the end will to the evident sorting
+			adding `| sort -n` to the end will do the evident sorting
 
 	- using `ls` and `awk`
 		- `ls -ltr | grep 'Nov.*5.*10 | awk '{print $NF}'`
