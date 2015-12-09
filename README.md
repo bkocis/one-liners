@@ -37,8 +37,16 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 
 		- `ls -ltr | grep 'Nov.*5.*10' | awk '{print $NF}' | xargs -i cp '{}' folder`
 
-- find and subfolder depth control 
+- find and subfolder depth control and skip folders/subfolders 
 	- `find . '*.py* -maxdepth 1 -not -path './*' ` 
+
+
+
+- remove files but skip some
+	- `rm * !(*.zip)` or `rm *.* !(*.zip|*.dat)`
+	- `rm -r */` to remove only folders 
+
+
 
 # Disclaimer 
 
