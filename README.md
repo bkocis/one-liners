@@ -31,12 +31,14 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 			adding `| sort -n` to the end will do the evident sorting
 
 	- using `ls` and `awk`
-		- `ls -ltr | grep 'Nov.*5.*10 | awk '{print $NF}'`
+		- `ls -ltr | grep 'Nov.*5.*10' | awk '{print $NF}'`
 
 		and copy them to another folder:
 
-		- `ls -ltr | grep 'Nov.*5.*10 | awk '{print $NF}' | xargs -i cp '{}' folder`
+		- `ls -ltr | grep 'Nov.*5.*10' | awk '{print $NF}' | xargs -i cp '{}' folder`
 
+- find and subfolder depth control 
+	- `find . '*.py* -maxdepth 1 -not -path './*' ` 
 
 # Disclaimer 
 
