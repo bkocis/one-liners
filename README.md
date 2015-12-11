@@ -47,6 +47,10 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 	- `rm -r */` to remove only folders 
 
 
+- sorting using `sort`
+	- `sort -k 2,2n -k 3 file.txt`
+
+		where `-k 2,2n -k 3` means to sort data using the given column number. First, it will sort 2nd column (date dd field) and then 3rd column (time). Found [here](http://www.cyberciti.biz/faq/linux-unix-sort-date-data-using-sortcommand/)
 
 # Disclaimer 
 
