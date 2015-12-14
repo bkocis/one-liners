@@ -5,3 +5,6 @@
 - `g/^/m0` to reverse the content of a file, for example lines 1-2-3 to 3-2-1
 
 - `setlocal spell` to get highlighted spell check. Choose from offered correction with tyeping `z=` at the misspelled word. 
+
+- find and replace characters, words by using `:``%s/something/new/g`
+
