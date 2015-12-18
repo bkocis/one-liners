@@ -54,9 +54,12 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 
 
 
+
+
 ####related
 [vi commands](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_vi/)
 
+[awk stuff](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_awk/)
 
 # Disclaimer 
 
