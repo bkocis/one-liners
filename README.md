@@ -54,6 +54,10 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 
 
 
+####related
+[vi commands](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_vi/)
+
+
 # Disclaimer 
 
 The fact you can do something in Bash doesn't necessarily mean you should! ;)
