@@ -1,27 +1,24 @@
 # One-liners
 Gnu/Linux command line "one-liners"
 
-Based on the excellent summary of command line tools by jlevy 
-https://github.com/bkocis/the-art-of-command-line
-
-Here are some extended versions of the "one-liners" from the mentioned repository. The following solutions are specific cases that I encountered; it is probable that you have found similar solutions.  
+Most probably you are pondering how to solve a specific problem using the command line. The following solutions are specific cases that I encountered; it is probable that you have found similar solutions. The purpose of this repository is partially egoistic, am they function mainly as a on-line-reminder substituting my notebook of one-liners.
 
 - Reverse the content of all specified text files using `find` and `vi` commands 
 
 	- `find . -iname '*.DPT' -exec vi '{}' -c ':g/^/m0' -c ':wq' \;`
 
-- Copy one file into all subfolders in the current working directory 
+- Copy one file into all sub folders in the current working directory 
 
 	- `find . -type d -exec cp file.name '{}' \;`
 
-- swap a file using `find`, `cp` and `rename` (in two steps) in case two files are in separate folders or subfolders. The 'old.f' content and filename is swaped to 'new.f'. 
+- swap a file using `find`, `cp` and `rename` (in two steps) in case two files are in separate folders or sub folders. The 'old.f' content and filename is swapped to 'new.f'. 
 	- `find . -iname '*.f' -exec cp ./path-to-file/new.f '{}' \;`
 	- `find . -iname 'new.f' -exec rename 's/old.f/new.f/' '{}' \;`
 
-- a compillation of sed one-liners 
+- a compilation of sed one-liners 
 	- http://sed.sourceforge.net/sed1line.txt
 
-- search files inbetween specific date
+- search files in-between specific date
 	- using `find`
 		- `find . -newermt '2015-03-03' ! -newermt '2015-03-04'` 
 		- `find . -newermt 'Nov 11 03:56' ! -newermt 'Nov 11 03:59' -printf '%Tc %p\n'`
@@ -37,7 +34,7 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 
 		- `ls -ltr | grep 'Nov.*5.*10' | awk '{print $NF}' | xargs -i cp '{}' folder`
 
-- find and subfolder depth control and skip folders/subfolders 
+- find and sub folder depth control and skip folders/subfolders 
 	- `find . '*.py* -maxdepth 1 -not -path './*' ` 
 
 
@@ -66,4 +63,7 @@ Here are some extended versions of the "one-liners" from the mentioned repositor
 The fact you can do something in Bash doesn't necessarily mean you should! ;)
 
 ### Worth to check out 
+
+[jlevy's art-of-command-line](https://github.com/jlevy/the-art-of-command-line).  
+ 
 https://unix-shell.zeef.com/caleb.xu
