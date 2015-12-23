@@ -1,7 +1,7 @@
 # One-liners
 Gnu/Linux command line "one-liners"
 
-Most probably you are pondering how to solve a specific problem using the command line. The following solutions are specific cases that I encountered; it is most likely that you have found similar solutions. The purpose of this repository is to be an on-line substitution of my paper notebook of one-liners.
+Most probably you are pondering how to solve a specific problem using the command line. The following solutions are specific cases that I encountered; it is most likely that you have found similar solutions. The purpose of this repository is to represent an on-line substitution of my paper-notebook of one-liners.
 
 - Reverse the content of all specified text files using `find` and `vi` commands 
 
