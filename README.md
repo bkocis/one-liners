@@ -64,6 +64,6 @@ The fact you can do something in Bash doesn't necessarily mean you should! ;)
 
 ### Worth to check out 
 
-[jlevy's art-of-command-line](https://github.com/jlevy/the-art-of-command-line).  
+[jlevy's art-of-command-line](https://github.com/jlevy/the-art-of-command-line)  
  
-https://unix-shell.zeef.com/caleb.xu
+[zeef/caleb.xu](https://unix-shell.zeef.com/caleb.xu)
