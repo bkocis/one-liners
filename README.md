@@ -65,7 +65,7 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 # Disclaimer 
 
-The fact you can do something in Bash doesn't necessarily mean you should! ;)
+The fact you can do something doesn't necessarily mean you should! ;)
 
 ### Worth to check out 
 
