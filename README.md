@@ -37,6 +37,9 @@ Most probably you are pondering how to solve a specific problem using the comman
 - find and sub folder depth control and skip folders/subfolders 
 	- `find . '*.py* -maxdepth 1 -not -path './*' ` 
 
+- combining regular expression with find. For example find all filenames that are longer then 5 characters
+	- `find -regextype posix-egrep -regex '.*[^/]{5}'`
+
 
 
 - remove files but skip some
