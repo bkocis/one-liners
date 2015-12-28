@@ -15,8 +15,6 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- `find . -iname '*.f' -exec cp ./path-to-file/new.f '{}' \;`
 	- `find . -iname 'new.f' -exec rename 's/old.f/new.f/' '{}' \;`
 
-- a compilation of sed one-liners 
-	- http://sed.sourceforge.net/sed1line.txt
 
 - search files in-between specific date
 	- using `find`
@@ -37,10 +35,12 @@ Most probably you are pondering how to solve a specific problem using the comman
 - find and sub folder depth control and skip folders/subfolders 
 	- `find . '*.py* -maxdepth 1 -not -path './*' ` 
 
-- combining regular expression with find. For example find all filenames that are longer then 5 characters
+- combining regular expression with `find`. For example find all filenames that are longer then 5 characters
 	- `find -regextype posix-egrep -regex '.*[^/]{5}'`
 
 
+- chaining commands inside `find`, for example rename specific files and move them to another folder 
+	- `find . -iname '*.dat' -exec rename 's/dat/DPT/' '{}' \; -exec mv '{}' ~/home/somewhere \;`
 
 - remove files but skip some
 	- `rm * !(*.zip)` or `rm *.* !(*.zip|*.dat)`
@@ -54,6 +54,8 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 
 
+- a compilation of sed one-liners 
+	- http://sed.sourceforge.net/sed1line.txt
 
 
 ####related
