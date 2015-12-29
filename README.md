@@ -40,9 +40,12 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 	or without `-prune`
 
-	- `find . iname '*some*' -not -path "./some/path/*"` 
+	- `find . -iname '*some*' -not -path "./some_path/*"` 
 	
 	the `*` is very much needed, otherwise it will exclude only the given path and not all paths below
+		
+		- in addition one can exclude a given folder at any level by 
+		`find . -iname '*some*' -not path "*/some_path/*"`
 	
 
 - combining regular expression with `find`. For example find all filenames that are longer then 5 characters
