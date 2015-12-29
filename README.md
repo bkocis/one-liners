@@ -38,6 +38,13 @@ Most probably you are pondering how to solve a specific problem using the comman
 - excluding folders from find 
 	- `find . -path ./some/path -prune -o -iname '*some*' -print`
 
+	or without `-prune`
+
+	- `find . iname '*some*' -not -path "./some/path/*"` 
+	
+	the `*` is very much needed, otherwise it will exclude only the given path and not all paths below
+	
+
 - combining regular expression with `find`. For example find all filenames that are longer then 5 characters
 	- `find -regextype posix-egrep -regex '.*[^/]{5}'`
 
