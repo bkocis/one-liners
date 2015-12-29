@@ -32,8 +32,11 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 		- `ls -ltr | grep 'Nov.*5.*10' | awk '{print $NF}' | xargs -i cp '{}' folder`
 
-- find and sub folder depth control and skip folders/subfolders 
-	- `find . '*.py* -maxdepth 1 -not -path './*' ` 
+- find with subfolder depth control
+	- `find . -maxdepth 1 -iname '*.py*` 
+
+- excluding folders from find 
+	- `find . -path ./some/path -prune -o -iname '*some*' -print`
 
 - combining regular expression with `find`. For example find all filenames that are longer then 5 characters
 	- `find -regextype posix-egrep -regex '.*[^/]{5}'`
