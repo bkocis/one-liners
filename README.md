@@ -51,6 +51,10 @@ Most probably you are pondering how to solve a specific problem using the comman
 - combining regular expression with `find`. For example find all filenames that are longer then 5 characters
 	- `find -regextype posix-egrep -regex '.*[^/]{5}'`
 
+- multiple find ; to use logical operators with `find` through regular expression 
+	- `find . -regextype posix-egrep -regex "(.*bgg.*\.*add.*)"`  AND
+	- `find . -regextype posix-egrep -regex "(.*bgg.*|.*add.*)"`  OR
+
 
 - chaining commands inside `find`, for example rename specific files and move them to another folder 
 	- `find . -iname '*.dat' -exec rename 's/dat/DPT/' '{}' \; -exec mv '{}' ~/home/somewhere \;`
