@@ -13,7 +13,7 @@
 - replace occurance of a character in selected lines and selected number of occurances in a line
  
 	`:g/^/let i=0 | where i<1 | s/a/b/ | let i+=1 | endwhile` - first occurances of a is replaced by b in all lines (g)
-	`:25,27/^/let i=0 | while i<1 | s/b/c/ | let i+=1 | endwhile`
+	`:3,5/^/let i=0 | while i<1 | s/b/c/ | let i+=1 | endwhile`
 
 	```bash
 	a a b a b
