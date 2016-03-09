@@ -60,7 +60,7 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- `find . -iname '*.dat' -exec rename 's/dat/DPT/' '{}' \; -exec mv '{}' ~/home/somewhere \;`
 
 - remove files but skip some
-	- `rm * !(*.zip)` or `rm *.* !(*.zip|*.dat)`
+	- `rm !(*.zip)` or `rm !(*.zip|*.dat)`
 	- `rm -r */` to remove only folders 
 
 
