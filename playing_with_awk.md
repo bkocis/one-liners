@@ -10,5 +10,5 @@
 	- `awk '{print $(NF-1)}'`i
 
 - concatenate two text files as a two column "table", line-by-line.
-	- `awk 'BEGIN {OFS=" "}{getline line < "file_2" print $0,line}' file_1`
+	- `awk 'BEGIN {OFS=" "}{getline line < "file_2"; print $0,line}' file_1`
 
