@@ -76,7 +76,7 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 
 ####related
-[vi commands](https://github.com/bkocis/linux_rc-s/playing_with_vi)
+[vi commands](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_vi)
 
 [awk stuff](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_awk/)
 
