@@ -7,4 +7,8 @@
 	- `find . *zip | awk -F '.zip' '{print "unzip "$0" -d "$1"}' | sh`
 
 - count elements from the end backwards 
-	- `awk '{print $(NF-1)}'`
+	- `awk '{print $(NF-1)}'`i
+
+- concatenate two text files as a two column "table", line-by-line.
+	- `awk 'BEGIN {OFS=" "}{getline line < "file_2" print $0,line}' file_1`
+
