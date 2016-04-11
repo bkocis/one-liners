@@ -80,6 +80,8 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 [awk stuff](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_awk/)
 
+[file text manipulations](https://github.com/bkocis/linux_rc-s/blob/master/file_text_manipulations/)
+
 # Disclaimer 
 
 The fact you can do something doesn't necessarily mean you should! ;)
