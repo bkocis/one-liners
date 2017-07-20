@@ -23,9 +23,9 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 			where `-printf '%Tc %p\n'` will print out the exact date 
 			
-			to be more specific use: -printf '%TY-%Tm-%Td--%TH:%TM:%TS'
+			to be more specific use: `-printf '%TY-%Tm-%Td--%TH:%TM:%TS'`
 
-			'%p' prints out the path
+			`'%p'` prints out the path
 
 			adding `| sort -n` to the end will do the evident sorting
 
@@ -35,6 +35,16 @@ Most probably you are pondering how to solve a specific problem using the comman
 		and copy them to another folder:
 
 		- `ls -ltr | grep 'Nov.*5.*10' | awk '{print $NF}' | xargs -i cp '{}' folder`
+
+
+- returning path string with find:
+
+	- `find `pwd` ....` will return the absolute path, since find is giving output relative to the input 
+
+	- `find . .....` 
+
+	- `find . -iname '*x' -printf '%p\n' ` will print out the filename only without the path 
+
 
 - find with subfolder depth control
 	- `find . -maxdepth 1 -iname '*.py*` 
