@@ -49,6 +49,10 @@ Most probably you are pondering how to solve a specific problem using the comman
 - find with subfolder depth control
 	- `find . -maxdepth 1 -iname '*.py*` 
 
+- find partial path and file 
+
+	- `find -path '*.git/logs/HEAD'`  using `iname` instead of `path` does not work
+
 - excluding folders from find 
 	- `find . -path ./some/path -prune -o -iname '*some*' -print`
 
