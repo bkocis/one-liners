@@ -22,6 +22,10 @@ Most probably you are pondering how to solve a specific problem using the comman
 		- `find . -newermt 'Nov 11 03:56' ! -newermt 'Nov 11 03:59' -printf '%Tc %p\n'`
 
 			where `-printf '%Tc %p\n'` will print out the exact date 
+			
+			to be more specific use: -printf '%TY-%Tm-%Td--%TH:%TM:%TS'
+
+			'%p' prints out the path
 
 			adding `| sort -n` to the end will do the evident sorting
 
