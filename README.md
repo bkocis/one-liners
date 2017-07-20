@@ -39,7 +39,7 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 - returning path string with find:
 
-	- `find (`)pwd(`) ....` will return the absolute path, since find is giving output relative to the input 
+	- ``find `pwd` ....`` will return the absolute path, since find is giving output relative to the input 
 
 	- `find . .....` 
 
