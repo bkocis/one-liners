@@ -94,11 +94,11 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 
 ####related
-[vi commands](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_vi)
+[vi commands](https://github.com/bkocis/one-liners/blob/master/playing_with_vi.md)
 
-[awk stuff](https://github.com/bkocis/linux_rc-s/blob/master/playing_with_awk/)
+[awk stuff](https://github.com/bkocis/one-liners/blob/master/playing_with_awk.md)
 
-[file text manipulations](https://github.com/bkocis/linux_rc-s/blob/master/file_text_manipulations/)
+[file text manipulations](https://github.com/bkocis/one-liners/blob/master/file_text_manipulations.md)
 
 # Disclaimer 
 
