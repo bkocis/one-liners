@@ -93,18 +93,28 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- http://sed.sourceforge.net/sed1line.txt
 
 
-####related
+- networking using `nmcli`
+	- Connect to netwrok `nmcli device wifi connect wifi-guest`
+	- connect to netwrok `nmcli con up id wifi-guest`
+	- check available devices `nmcli d`
+	- check all wifi networks in the area with signal strength `nmcli d wifi`
+	
+
+
+
+## Related:
+
 [vi commands](https://github.com/bkocis/one-liners/blob/master/playing_with_vi.md)
 
 [awk stuff](https://github.com/bkocis/one-liners/blob/master/playing_with_awk.md)
 
 [file text manipulations](https://github.com/bkocis/one-liners/blob/master/file_text_manipulations.md)
 
-# Disclaimer 
+## Disclaimer 
 
 The fact you can do something doesn't necessarily mean you should! ;)
 
-### Worth to check out 
+## Worth to check out 
 
 [jlevy's art-of-command-line](https://github.com/jlevy/the-art-of-command-line)  
  
