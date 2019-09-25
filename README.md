@@ -94,8 +94,8 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 
 - networking using `nmcli`
-	- Connect to netwrok `nmcli device wifi connect wifi-guest`
-	- connect to netwrok `nmcli con up id wifi-guest`
+	- Connect to netwrok `nmcli device wifi connect <SSID> password <password> `
+	- connect to netwrok `nmcli con up id <SSID>`
 	- check available devices `nmcli d`
 	- check all wifi networks in the area with signal strength `nmcli d wifi`
 	
