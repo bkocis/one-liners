@@ -114,7 +114,7 @@ Most probably you are pondering how to solve a specific problem using the comman
 
 The fact you can do something doesn't necessarily mean you should! ;)
 
-## Worth to check out 
+## Worth checking out: 
 
 [jlevy's art-of-command-line](https://github.com/jlevy/the-art-of-command-line)  
  
