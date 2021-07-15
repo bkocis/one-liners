@@ -16,6 +16,7 @@
 ## CSV or other tabular type data 
 
 -show nice table representation of csv files using `column` command: 
+
 	- `column -tns, training_metrics.csv | less -#2NS`
 		- where the separator is comma `,`
 		- the `less` command helps in navigating in bigger files 
