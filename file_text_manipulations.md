@@ -13,4 +13,9 @@
 		- The command controls what will be printed out. `$0` is the whole line, and using the square brackets gives array access. For each node of the array `x` is incrementad and the line printed if the content of that node was not previously set (by using `!`)
 	
 	
+## CSV or other tabular type data 
 
+-show nice table representation of csv files using `column` command: 
+	- `column -tns, training_metrics.csv | less -#2NS`
+		- where the separator is comma `,`
+		- the `less` command helps in navigating in bigger files 
