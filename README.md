@@ -81,6 +81,8 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- `rm !(*.zip)` or `rm !(*.zip|*.dat)`
 	- `rm -r */` to remove only folders 
 
+- cleaning git repo
+	- `find . -name "*.pyc" -exec git rm {} \;`
 
 - sorting using `sort`
 	- `sort -k 2,2n -k 3 file.txt`
