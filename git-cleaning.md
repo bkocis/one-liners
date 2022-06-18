@@ -44,3 +44,4 @@ git push origin master
 
 
 
+https://stackoverflow.com/questions/2100907/how-to-remove-delete-a-large-file-from-commit-history-in-the-git-repository
