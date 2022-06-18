@@ -48,3 +48,6 @@ References:
 https://stackoverflow.com/questions/2100907/how-to-remove-delete-a-large-file-from-commit-history-in-the-git-repository
 
 https://www.deployhq.com/git/faqs/removing-large-files-from-git-history
+
+Removing files, folders from cache
+https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
