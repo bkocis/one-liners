@@ -101,8 +101,10 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- check available devices `nmcli d`
 	- check all wifi networks in the area with signal strength `nmcli d wifi`
 	
-
-
+- `du`, 'df' commands to investigate storage space:
+	- `du -sh ./* | sort -h`
+	- `watch -n 1 "df -h | grep "Filesystem" && df -h | grep '/$' && df | grep '/$'"`
+	
 
 ## Related:
 
