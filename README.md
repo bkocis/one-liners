@@ -105,7 +105,8 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- `du -sh ./* | sort -h`
 	- `watch -n 1 "df -h | grep "Filesystem" && df -h | grep '/$' && df | grep '/$'"`
 	
-- `screen` command add to `./.screenrc`: `termcapinfo xterm* ti@:te@`
+- `screen` command add to `./.screenrc`: `termcapinfo xterm* ti@:te@`. For logging the std output of screen funciton into a file us the `-L` flag:
+	- `screen -L -S NAME_OF_SESSION`
 	
 
 ## Related:
