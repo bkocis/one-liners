@@ -105,6 +105,8 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- `du -sh ./* | sort -h`
 	- `watch -n 1 "df -h | grep "Filesystem" && df -h | grep '/$' && df | grep '/$'"`
 	
+- `screen` command add to `./.screenrc`: `termcapinfo xterm* ti@:te@`
+	
 
 ## Related:
 
