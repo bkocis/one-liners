@@ -20,5 +20,11 @@
 
 	- `column -tns, training_metrics.csv | less -#2NS`
 	
-		- where the separator is comma `,`
-		- the `less` command helps in navigating in bigger files 
+	with the comma `,` as separator
+	
+- or using the escape character in case the delimiter is ";"
+
+	- `column -ts\; category_metrics.csv | less -#2NS`
+	
+
+- the `less` command helps in navigating in bigger files 
