@@ -3,6 +3,8 @@ Gnu/Linux command line "one-liners"
 
 Most probably you are pondering how to solve a specific problem using the command line. The following solutions are specific cases that I encountered; it is most likely that you have found similar solutions. The purpose of this repository is to represent an on-line substitution of my paper-notebook of one-liners.
 
+## `find` - searching and command execution
+
 - Reverse the content of all specified text files using `find` and `vi` commands 
 
 	- `find . -iname '*.DPT' -exec vi '{}' -c ':g/^/m0' -c ':wq' \;`
@@ -100,13 +102,19 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- connect to netwrok `nmcli con up id <SSID>`
 	- check available devices `nmcli d`
 	- check all wifi networks in the area with signal strength `nmcli d wifi`
-	
+
+
+## `du` - estimate file space usage
+
+
 - `du`, `df` commands to investigate storage space:
 	- `du -sh ./* | sort -h`
 	- `watch -n 1 "df -h | grep "Filesystem" && df -h | grep '/$' && df | grep '/$'"`
 	- `du -sh .[^.]*` - for inspection of hidden folders only
 	- `du -sh --exclude=/media /` - to exclude a folder from the calcuation of folder sizes 
-	
+
+## `screen` command 
+
 - `screen` command add to `./.screenrc`: `termcapinfo xterm* ti@:te@`. For logging the std output of screen funciton into a file us the `-L` flag:
 	- `screen -L -S NAME_OF_SESSION`
 	
