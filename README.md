@@ -101,9 +101,11 @@ Most probably you are pondering how to solve a specific problem using the comman
 	- check available devices `nmcli d`
 	- check all wifi networks in the area with signal strength `nmcli d wifi`
 	
-- `du`, 'df' commands to investigate storage space:
+- `du`, `df` commands to investigate storage space:
 	- `du -sh ./* | sort -h`
 	- `watch -n 1 "df -h | grep "Filesystem" && df -h | grep '/$' && df | grep '/$'"`
+	- `du -sh .[^.]*` - for inspection of hidden folders only
+	- `du -sh --exclude=/media /` - to exclude a folder from the calcuation of folder sizes 
 	
 - `screen` command add to `./.screenrc`: `termcapinfo xterm* ti@:te@`. For logging the std output of screen funciton into a file us the `-L` flag:
 	- `screen -L -S NAME_OF_SESSION`
