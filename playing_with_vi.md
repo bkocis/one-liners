@@ -1,4 +1,4 @@
-####Vi text editor commands examples
+### Vi text editor commands examples
 
 - set up the `.vimrc` file [rc files](https://github.com/bkocis/linux_rc-s/blob/master/vimrc/)
 
@@ -24,8 +24,8 @@
 	a a b a b
 	a a b a b
 	```
+- block comment/uncomment <kbd>Ctrl</kbd> + <kbd>v</kbd> to select line and add/remove character(s) <kbd>#</kbd>
 
-
-#####References:
+#### References:
 
 - http://thecodeship.com/tools/year-of-vim-beginner-advice-lessons-learned/
