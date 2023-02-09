@@ -12,3 +12,5 @@
 - concatenate two text files as a two column "table", line-by-line.
 	- `awk 'BEGIN {OFS=" "}{getline line < "file_2"; print $0,line}' file_1`
 
+- example of searching for pattern "Loading" and taking the second last and last column, with string cleaning of column values 
+ 	- `awk  '/Loading/{print $(NF-2) ";" substr($(NF-0), 1, length($(NF-0))-1)  }' GRAYLOG_EXPORT.csv`
