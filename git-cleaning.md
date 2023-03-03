@@ -39,6 +39,10 @@ and push to remote:
 
 ```bash
 git push origin master
+
+or 
+
+git push --all --force
 ```
 
 
