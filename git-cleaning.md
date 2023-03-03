@@ -14,17 +14,16 @@ git rev-list --objects --all \
 for example
 
 ```bash
-da9a7dcca3a1  133MiB pythonEyeknowWebAppA/app/models/conv_lstm_saved_models/model_checkpoint.hdf5
-4f8d97475c1a  161MiB pythonEyeknowWebAppA/app/models/person_detection/crowdhuman_yolov5m.pt
-6bbc7668b187  165MiB pythonEyeknowWebAppA/app/models/label_fix4/weights/best.pt
-d5a962e8fe24  165MiB pythonEyeknowWebAppA/app/models/child_detector_cleaned4/weights/best.pt
+da9a7dcca3a1  133MiB pythonWebAppA/app/models/conv_lstm_saved_models/model_checkpoint.hdf5
+4f8d97475c1a  161MiB pythonWebAppA/app/models/person_detection/crowdhuman_yolov5m.pt
+6bbc7668b187  165MiB pythonWebAppA/app/models/label_fix4/weights/best.pt
 
 ```
 
 to remove the large files: 
 
 ```bash
-git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch pythonEyeknowWebAppA/app/models" -- --all
+git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch pythonWebAppA/app/models" -- --all
 ```
 
 after execute the following:
