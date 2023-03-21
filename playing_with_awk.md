@@ -14,3 +14,27 @@
 
 - example of searching for pattern "Loading" and taking the second last and last column, with string cleaning of column values 
  	- `awk  '/Loading/{print $(NF-2) ";" substr($(NF-0), 1, length($(NF-0))-1)  }' GRAYLOG_EXPORT.csv`
+
+
+Do some basic arithmetic on floats extracted by string search:
+
+```bash 
+#!/bin/bash
+
+# cli version of the command 
+# LC_NUMERIC="C" awk  '/TIMING/{ print $(NF-1) ; sum += $(NF-1) ; n++ } END { print sum ; print n ; print sum/n }' model_elastic_net_05Super_02.txt
+
+FILENAME=$1
+STRING_TO_MATCH=$2
+COLUMN_FROM_END=$3
+
+echo $FILENAME
+echo $STRING_TO_MATCH
+echo $COLUMN_FROM_END
+
+# use variable passing to awk from bash with the `-v` flag
+# use the `$0 ~` to pass the sting to awk
+# local setting for handling commas and dot for floats
+LC_NUMERIC="C" awk -v search="$STRING_TO_MATCH" -v nc="$COLUMN_FROM_END" '$0 ~ search{ print $(NF-nc) ; sum += $(NF-nc) ; n++ } END { print sum ; print n ; print sum/n }' $FILENAME
+
+```
