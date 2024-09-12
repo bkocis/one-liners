@@ -28,3 +28,6 @@
 	
 
 - the `less` command helps in navigating in bigger files 
+
+- on mac
+	- `column -t -s, FILENAME.csv | less -#2NS`
